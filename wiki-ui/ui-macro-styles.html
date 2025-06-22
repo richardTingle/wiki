@@ -6,14 +6,12 @@
     <title>UI Macro Styles :: jMonkeyEngine Docs</title>
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/wiki-ui/ui-macro-styles.html">
     <link rel="prev" href="sidebar-styles.html">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="UI Macro Styles">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../_/css/site-extra.css">
-<link rel="stylesheet" href="../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -23,9 +21,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -114,7 +109,7 @@
     <li class="component">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../docs/3.4/documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -128,7 +123,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -136,7 +131,7 @@
     <li class="component is-current">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="index.html">master</a>
         </li>
       </ul>
@@ -164,7 +159,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Asciidoctor supports <a href="#antora:asciidoc:ui-macros.adoc" class="page unresolved">three UI element representations</a> out of the box, which are made from corresponding inline UI macros.</p>
+<p>Asciidoctor supports <a href="#antora:asciidoc:ui-macros.adoc" class="xref unresolved">three UI element representations</a> out of the box, which are made from corresponding inline UI macros.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -189,7 +184,7 @@ However, to look proper, they require some additional styling.</p>
 <h2 id="button"><a class="anchor" href="#button"></a>Button</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A <a href="#antora:asciidoc:ui-macros.adoc#button" class="page unresolved">button</a> is meant to represent an on-screen button (<code>btn:[Save]</code>).
+<p>A <a href="#antora:asciidoc:ui-macros.adoc#button" class="xref unresolved">button</a> is meant to represent an on-screen button (<code>btn:[Save]</code>).
 However, it should not appear like an actual button as that could confuse the reader into thinking it&#8217;s interactive.
 Therefore, a button is rendered as a bold text by default:</p>
 </div>
@@ -210,7 +205,7 @@ Therefore, a button is rendered as a bold text by default:</p>
 <h2 id="keybinding"><a class="anchor" href="#keybinding"></a>Keybinding</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A <a href="#antora:asciidoc:ui-macros.adoc#keybinding" class="page unresolved">keybinding</a> can be a single key (<code>kbd:[F11]</code>) or a sequence of keys (<code>+<span class="keyseq"><kbd>Ctrl</kbd>+<kbd>F</kbd></span></code>).
+<p>A <a href="#antora:asciidoc:ui-macros.adoc#keybinding" class="xref unresolved">keybinding</a> can be a single key (<code>kbd:[F11]</code>) or a sequence of keys (<code>+<span class="keyseq"><kbd>Ctrl</kbd>+<kbd>F</kbd></span></code>).
 Here&#8217;s the HTML that&#8217;s generated for these two forms.</p>
 </div>
 <div class="listingblock">
@@ -232,7 +227,7 @@ Here&#8217;s the HTML that&#8217;s generated for these two forms.</p>
 <h2 id="menu"><a class="anchor" href="#menu"></a>Menu</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A <a href="#antora:asciidoc:ui-macros.adoc#menu" class="page unresolved">menu</a> can be a top-level menu reference (<code>menu:File[]</code>) or a nested selection (<code>menu:File[Save]</code>).
+<p>A <a href="#antora:asciidoc:ui-macros.adoc#menu" class="xref unresolved">menu</a> can be a top-level menu reference (<code>menu:File[]</code>) or a nested selection (<code>menu:File[Save]</code>).
 Here&#8217;s the HTML that&#8217;s generated for these two forms.</p>
 </div>
 <div class="listingblock">
@@ -268,20 +263,6 @@ Here&#8217;s the HTML that&#8217;s generated for these two forms.</p>
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../_/js/site.js"></script>
 <script async src="../_/js/vendor/highlight.js"></script>
   </body>

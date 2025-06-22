@@ -6,14 +6,12 @@
     <title>Laying Out the GUI in Java :: jMonkeyEngine Docs</title>
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs/3.4/core/gui/nifty_gui_java_layout.html">
     <meta name="keywords" content="gui, documentation, nifty, hud">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Laying Out the GUI in Java">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -23,9 +21,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -59,7 +54,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
 </ul>
   </li>
@@ -951,7 +946,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../3.4/documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -965,7 +960,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -973,7 +968,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1010,19 +1005,19 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><a href="nifty_gui.html" class="page">Nifty GUI Concepts</a></p>
+<p><a href="nifty_gui.html" class="xref page">Nifty GUI Concepts</a></p>
 </li>
 <li>
-<p><a href="nifty_gui_best_practices.html" class="page">Nifty GUI Best Practices</a></p>
+<p><a href="nifty_gui_best_practices.html" class="xref page">Nifty GUI Best Practices</a></p>
 </li>
 <li>
-<p><a href="nifty_gui_xml_layout.html" class="page">Nifty GUI XML Layout</a> or <strong>Nifty <abbr title="Graphical User Interface">GUI</abbr> Java Layout</strong></p>
+<p><a href="nifty_gui_xml_layout.html" class="xref page">Nifty GUI XML Layout</a> or <strong>Nifty <abbr title="Graphical User Interface">GUI</abbr> Java Layout</strong></p>
 </li>
 <li>
-<p><a href="nifty_gui_overlay.html" class="page">Nifty GUI Overlay</a> or <a href="nifty_gui_projection.html" class="page">Nifty GUI Projection</a></p>
+<p><a href="nifty_gui_overlay.html" class="xref page">Nifty GUI Overlay</a> or <a href="nifty_gui_projection.html" class="xref page">Nifty GUI Projection</a></p>
 </li>
 <li>
-<p><a href="nifty_gui_java_interaction.html" class="page">Interact with the GUI from Java</a></p>
+<p><a href="nifty_gui_java_interaction.html" class="xref page">Interact with the GUI from Java</a></p>
 </li>
 </ol>
 </div>
@@ -1182,7 +1177,7 @@ public class MyStartScreen extends BaseAppState {
 </div>
 </div>
 <div class="paragraph">
-<p>In this tutorial, you recreate the same screen as in the <a href="nifty_gui_xml_layout.html" class="page"> Laying out the GUI in XML</a> example.</p>
+<p>In this tutorial, you recreate the same screen as in the <a href="nifty_gui_xml_layout.html" class="xref page"> Laying out the GUI in XML</a> example.</p>
 </div>
 <div class="paragraph">
 <p>Create an Screen.Java file that extends BaseAppState in the mygame directory of your project. One Java file can contain several, or even all screens. As a reminder: Nifty displays one screen at a time; a screen contains several layers on top of one another; each layer contains panels that are embedded into another; the panels contain the actual content (text, images, or controls).</p>
@@ -1265,7 +1260,7 @@ nifty.addScreen("hud", new ScreenBuilder("hud") {{
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>nifty.addScreen("hud", new ScreenBuilder("hud"){{</code></pre>
+<pre class="highlightjs highlight"><code class="language-none hljs">nifty.addScreen("hud", new ScreenBuilder("hud"){{</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1539,7 +1534,7 @@ panel(new PanelBuilder("panel_top") {{
 </div>
 </div>
 <div class="paragraph">
-<p>The font used is jME3&#8217;s default font &#8220;Interface/Fonts/Default.fnt&#8221; which is included in the jMonkeyEngine.JAR. You can add your own fonts to your own <code>assets/Interface</code> directory. Set your font to the one you created during the start of the <a href="nifty_gui_xml_layout.html#implement-your-gui-layout" class="page">Gui Implementation</a> phase of your game.</p>
+<p>The font used is jME3&#8217;s default font &#8220;Interface/Fonts/Default.fnt&#8221; which is included in the jMonkeyEngine.JAR. You can add your own fonts to your own <code>assets/Interface</code> directory. Set your font to the one you created during the start of the <a href="nifty_gui_xml_layout.html#implement-your-gui-layout" class="xref page">Gui Implementation</a> phase of your game.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1987,10 +1982,10 @@ public class Screen extends BaseAppState {
 <div class="ulist">
 <ul>
 <li>
-<p><a href="nifty_gui_overlay.html" class="page">Nifty GUI Overlay</a> (recommended)</p>
+<p><a href="nifty_gui_overlay.html" class="xref page">Nifty GUI Overlay</a> (recommended)</p>
 </li>
 <li>
-<p><a href="nifty_gui_projection.html" class="page">Nifty GUI Projection</a> (optional)</p>
+<p><a href="nifty_gui_projection.html" class="xref page">Nifty GUI Projection</a> (optional)</p>
 </li>
 </ul>
 </div>
@@ -2006,20 +2001,6 @@ public class Screen extends BaseAppState {
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

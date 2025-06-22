@@ -8,14 +8,12 @@
     <link rel="prev" href="hello_input_system.html">
     <link rel="next" href="hello_animation.html">
     <meta name="keywords" content="documentation, beginner, intro, model, material, color, texture, transparency">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="jMonkeyEngine 3 Tutorial (6) - Hello Materials">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -25,9 +23,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -61,7 +56,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../release.html">Release Guide</a>
@@ -207,24 +202,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../how-to/modeling/blender/mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -373,7 +350,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../../core/animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -416,6 +396,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/material/normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -496,6 +479,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -539,6 +531,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -690,6 +688,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -863,6 +870,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -941,7 +951,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -955,7 +965,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -963,7 +973,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -999,7 +1009,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The term Material includes everything that influences what the surface of a 3D model looks like: The color, texture, shininess, and opacity/transparency. Plain coloring is covered in <a href="hello_node.html" class="page">Hello Node</a>. Loading models that come with materials is covered in <a href="hello_asset.html" class="page">Hello Asset</a>. In this tutorial you learn to create and use custom JME3 Material Definitions.</p>
+<p>The term Material includes everything that influences what the surface of a 3D model looks like: The color, texture, shininess, and opacity/transparency. Plain coloring is covered in <a href="hello_node.html" class="xref page">Hello Node</a>. Loading models that come with materials is covered in <a href="hello_asset.html" class="xref page">Hello Asset</a>. In this tutorial you learn to create and use custom JME3 Material Definitions.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -1058,10 +1068,8 @@ public class HelloMaterial extends SimpleApplication {
     Box cube1Mesh = new Box( 1f,1f,1f);
     Geometry cube1Geo = new Geometry("My Textured Box", cube1Mesh);
     cube1Geo.setLocalTranslation(new Vector3f(-3f,1.1f,0f));
-    Material cube1Mat = new Material(assetManager,
-        "Common/MatDefs/Misc/Unshaded.j3md");
-    Texture cube1Tex = assetManager.loadTexture(
-        "Interface/Logo/Monkey.jpg");
+    Material cube1Mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+    Texture cube1Tex = assetManager.loadTexture("Interface/Logo/Monkey.jpg");
     cube1Mat.setTexture("ColorMap", cube1Tex);
     cube1Geo.setMaterial(cube1Mat);
     rootNode.attachChild(cube1Geo);
@@ -1069,31 +1077,27 @@ public class HelloMaterial extends SimpleApplication {
     /** A translucent/transparent texture, similar to a window frame. */
     Box cube2Mesh = new Box( 1f,1f,0.01f);
     Geometry cube2Geo = new Geometry("window frame", cube2Mesh);
-    Material cube2Mat = new Material(assetManager,
-        "Common/MatDefs/Misc/Unshaded.j3md");
-    cube2Mat.setTexture("ColorMap",
-        assetManager.loadTexture("Textures/ColoredTex/Monkey.png"));
-    cube2Mat.getAdditionalRenderState().setBlendMode(BlendMode.Alpha);
+    Material cube2Mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+    cube2Mat.setTexture("ColorMap", assetManager.loadTexture("Textures/ColoredTex/Monkey.png"));
+    cube2Mat.getAdditionalRenderState().setBlendMode(BlendMode.Alpha);  // activate transparency
     cube2Geo.setQueueBucket(Bucket.Transparent);
     cube2Geo.setMaterial(cube2Mat);
     rootNode.attachChild(cube2Geo);
 
-    /** A bumpy rock with a shiny light effect.*/
+    /* A bumpy rock with a shiny light effect. To make bumpy objects you must create a NormalMap. */
     Sphere sphereMesh = new Sphere(32,32, 2f);
     Geometry sphereGeo = new Geometry("Shiny rock", sphereMesh);
     sphereMesh.setTextureMode(Sphere.TextureMode.Projected); // better quality on spheres
     TangentBinormalGenerator.generate(sphereMesh);           // for lighting effect
-    Material sphereMat = new Material(assetManager,
-        "Common/MatDefs/Light/Lighting.j3md");
-    sphereMat.setTexture("DiffuseMap",
-        assetManager.loadTexture("Textures/Terrain/Pond/Pond.jpg"));
-    sphereMat.setTexture("NormalMap",
-        assetManager.loadTexture("Textures/Terrain/Pond/Pond_normal.png"));
+    Material sphereMat = new Material(assetManager, "Common/MatDefs/Light/Lighting.j3md");
+    sphereMat.setTexture("DiffuseMap", assetManager.loadTexture("Textures/Terrain/Pond/Pond.jpg"));
+    sphereMat.setTexture("NormalMap", assetManager.loadTexture("Textures/Terrain/Pond/Pond_normal.png"));
     sphereMat.setBoolean("UseMaterialColors",true);
     sphereMat.setColor("Diffuse",ColorRGBA.White);
     sphereMat.setColor("Specular",ColorRGBA.White);
     sphereMat.setFloat("Shininess", 64f);  // [0,128]
     sphereGeo.setMaterial(sphereMat);
+    //sphereGeo.setMaterial((Material) assetManager.loadMaterial("Materials/MyCustomMaterial.j3m"));
     sphereGeo.setLocalTranslation(0,2,-2); // Move it a bit
     sphereGeo.rotate(1.6f, 0, 0);          // Rotate it a bit
     rootNode.attachChild(sphereGeo);
@@ -1138,10 +1142,8 @@ public class HelloMaterial extends SimpleApplication {
     Box cube1Mesh = new Box( 1f,1f,1f);
     Geometry cube1Geo = new Geometry("My Textured Box", cube1Mesh);
     cube1Geo.setLocalTranslation(new Vector3f(-3f,1.1f,0f));
-    Material cube1Mat = new Material(assetManager,
-        "Common/MatDefs/Misc/Unshaded.j3md");
-    Texture cube1Tex = assetManager.loadTexture(
-        "Interface/Logo/Monkey.jpg");
+    Material cube1Mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+    Texture cube1Tex = assetManager.loadTexture("Interface/Logo/Monkey.jpg");
     cube1Mat.setTexture("ColorMap", cube1Tex);
     cube1Geo.setMaterial(cube1Mat);
     rootNode.attachChild(cube1Geo);</code></pre>
@@ -1199,12 +1201,10 @@ This bucket ensures that the transparent object is drawn on top of objects behin
 <pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    /** A translucent/transparent texture, similar to a window frame. */
     Box cube2Mesh = new Box( 1f,1f,0.01f);
     Geometry cube2Geo = new Geometry("window frame", cube2Mesh);
-    Material cube2Mat = new Material(assetManager,
-    "Common/MatDefs/Misc/Unshaded.j3md");
-    cube2Mat.setTexture("ColorMap",
-        assetManager.loadTexture("Textures/ColoredTex/Monkey.png"));
-    cube2Mat.getAdditionalRenderState().setBlendMode(BlendMode.Alpha);  // !
-    cube2Geo.setQueueBucket(Bucket.Transparent);                        // !
+    Material cube2Mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+    cube2Mat.setTexture("ColorMap", assetManager.loadTexture("Textures/ColoredTex/Monkey.png"));
+    cube2Mat.getAdditionalRenderState().setBlendMode(BlendMode.Alpha);  // activate transparency
+    cube2Geo.setQueueBucket(Bucket.Transparent);
     cube2Geo.setMaterial(cube2Mat);
     rootNode.attachChild(cube2Geo);</code></pre>
 </div>
@@ -1303,8 +1303,7 @@ This bucket ensures that the transparent object is drawn on top of objects behin
 <p>Create a material based on the <code>Lighting.j3md</code> default material.</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    Material sphereMat = new Material(assetManager,
-        "Common/MatDefs/Light/Lighting.j3md");</code></pre>
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    Material sphereMat = new Material(assetManager, "Common/MatDefs/Light/Lighting.j3md");</code></pre>
 </div>
 </div>
 <div class="olist loweralpha">
@@ -1318,8 +1317,7 @@ This bucket ensures that the transparent object is drawn on top of objects behin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    sphereMat.setTexture("DiffuseMap",
-        assetManager.loadTexture("Textures/Terrain/Pond/Pond.jpg"));</code></pre>
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    sphereMat.setTexture("DiffuseMap", assetManager.loadTexture("Textures/Terrain/Pond/Pond.jpg"));</code></pre>
 </div>
 </div>
 </li>
@@ -1332,8 +1330,7 @@ This bucket ensures that the transparent object is drawn on top of objects behin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    sphereMat.setTexture("NormalMap",
-        assetManager.loadTexture("Textures/Terrain/Pond/Pond_normal.png"));</code></pre>
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    sphereMat.setTexture("NormalMap", assetManager.loadTexture("Textures/Terrain/Pond/Pond_normal.png"));</code></pre>
 </div>
 </div>
 </li>
@@ -1480,7 +1477,7 @@ Shininess : Float</p>
 <p>Create a plain text file <code>assets/Materials/MyCustomMaterial.j3m</code> in your project directory, with the following content:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>Material My shiny custom material : Common/MatDefs/Light/Lighting.j3md {
+<pre class="highlightjs highlight"><code class="language-none hljs">Material My shiny custom material : Common/MatDefs/Light/Lighting.j3md {
      MaterialParameters {
         DiffuseMap : Textures/Terrain/Pond/Pond.jpg
         NormalMap : Textures/Terrain/Pond/Pond_normal.png
@@ -1513,8 +1510,7 @@ Shininess : Float</p>
 <p>Below this line, add the following line:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">sphereGeo.setMaterial((Material) assetManager.loadMaterial(
-    "Materials/MyCustomMaterial.j3m"));</code></pre>
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    sphereGeo.setMaterial((Material) assetManager.loadMaterial("Materials/MyCustomMaterial.j3m"));</code></pre>
 </div>
 </div>
 </li>
@@ -1584,10 +1580,10 @@ Shininess : Float</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../../core/material/how_to_use_materials.html" class="page">How to Use Materials</a></p>
+<p><a href="../../core/material/how_to_use_materials.html" class="xref page">How to Use Materials</a></p>
 </li>
 <li>
-<p><a href="../../sdk/material_editing.html" class="page">Material Editing</a></p>
+<p><a href="../../sdk/material_editing.html" class="xref page">Material Editing</a></p>
 </li>
 <li>
 <p><a href="https://hub.jmonkeyengine.org/t/jmonkeyengine3-material-system-full-explanation/12947">Materials</a> forum thread</p>
@@ -1616,20 +1612,6 @@ Shininess : Float</p>
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

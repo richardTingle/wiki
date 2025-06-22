@@ -7,14 +7,12 @@
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs/3.4/tutorials/how-to/modeling/blender/blender.html">
     <link rel="prev" href="../3dsmax/3dsmax.html">
     <link rel="next" href="blender_buffer_clearing.html">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Creating assets in Blender3D">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -24,9 +22,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -60,7 +55,7 @@
     <a class="nav-link" href="../../../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../../../release.html">Release Guide</a>
@@ -206,24 +201,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -372,7 +349,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../../../core/animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../../../../core/animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../../../core/cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -415,6 +395,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../../../core/system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/material/normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -495,6 +478,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -538,6 +530,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../../../core/vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -689,6 +687,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../../../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -862,6 +869,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../../../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -940,7 +950,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../../../../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -954,7 +964,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -962,7 +972,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1007,7 +1017,7 @@
 <h2 id="asset-management"><a class="anchor" href="#asset-management"></a>Asset Management</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For the managing of assets in general, be sure to read the <a href="../../../concepts/multi-media_asset_pipeline.html" class="page">Asset Pipeline Documentation</a>. It contains vital information on how to manage your asset files.</p>
+<p>For the managing of assets in general, be sure to read the <a href="../../../concepts/multi-media_asset_pipeline.html" class="xref page">Asset Pipeline Documentation</a>. It contains vital information on how to manage your asset files.</p>
 </div>
 </div>
 </div>
@@ -1342,7 +1352,7 @@ soldier2Node.attachChild(skeletonDebug);</code></pre>
 <h2 id="action-baking"><a class="anchor" href="#action-baking"></a>Action Baking</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>There are many 3D model <a href="../../../../getting-started/features.html#supported-external-file-types" class="page">Supported External File Types</a> for jMonkeyEngine. Some of them bake your actions automatically on export, others don&#8217;t. Baking is a destructive process so it is recommended that you test the animation in-game first. If your animations are all messed up, try baking them or use a different exporter.</p>
+<p>There are many 3D model <a href="../../../../getting-started/features.html#supported-external-file-types" class="xref page">Supported External File Types</a> for jMonkeyEngine. Some of them bake your actions automatically on export, others don&#8217;t. Baking is a destructive process so it is recommended that you test the animation in-game first. If your animations are all messed up, try baking them or use a different exporter.</p>
 </div>
 <div class="paragraph">
 <p>If you find yourself in need of baking, the process is as follows.</p>
@@ -1427,7 +1437,7 @@ soldier2Node.attachChild(skeletonDebug);</code></pre>
 <p>Save your file.</p>
 </li>
 <li>
-<p>Clear the old action from the <code>Linked Action</code> buffer. See <a href="blender_buffer_clearing.html" class="page">Blender Buffer Clearing</a> for more information.</p>
+<p>Clear the old action from the <code>Linked Action</code> buffer. See <a href="blender_buffer_clearing.html" class="xref page">Blender Buffer Clearing</a> for more information.</p>
 </li>
 </ol>
 </div>
@@ -1874,7 +1884,7 @@ The asterisk <kbd>*</kbd> next to the <code>Image</code> menu item means the ima
 <h2 id="importing-the-model-in-the-sdk-and-creating-the-appropriate-material"><a class="anchor" href="#importing-the-model-in-the-sdk-and-creating-the-appropriate-material"></a>Importing the model in the SDK and creating the appropriate material</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once this is done, export your model with one of the 3D model <a href="../../../../getting-started/features.html#supported-external-file-types" class="page">Supported External File Types</a> and convert it into a <code>.j3o</code> with the SDK, or the JME <a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/export/binary/BinaryExporter.html">BinaryExporter</a>.</p>
+<p>Once this is done, export your model with one of the 3D model <a href="../../../../getting-started/features.html#supported-external-file-types" class="xref page">Supported External File Types</a> and convert it into a <code>.j3o</code> with the SDK, or the JME <a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/export/binary/BinaryExporter.html">BinaryExporter</a>.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2105,7 +2115,7 @@ The asterisk <kbd>*</kbd> next to the <code>Image</code> menu item means the ima
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../../../../core/util/sky.html" class="page">How to add a Sky to your Scene</a></p>
+<p><a href="../../../../core/util/sky.html" class="xref page">How to add a Sky to your Scene</a></p>
 </li>
 <li>
 <p><a href="http://hub.jmonkeyengine.org/t/jmonkeyengine-tutorial-how-to-create-skymaps-using-blender/19313">http://hub.jmonkeyengine.org/t/jmonkeyengine-tutorial-how-to-create-skymaps-using-blender/19313</a></p>
@@ -2128,20 +2138,6 @@ The asterisk <kbd>*</kbd> next to the <code>Image</code> menu item means the ima
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../../../_/js/site.js"></script>
 <script async src="../../../../../../_/js/vendor/highlight.js"></script>
   </body>

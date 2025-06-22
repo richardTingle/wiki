@@ -8,14 +8,12 @@
     <link rel="prev" href="hello_terrain.html">
     <link rel="next" href="hello_effects.html">
     <meta name="keywords" content="sound, documentation, beginner, intro">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="jMonkeyEngine 3 Tutorial (11) - Hello Audio">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -25,9 +23,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -61,7 +56,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../release.html">Release Guide</a>
@@ -207,24 +202,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../how-to/modeling/blender/mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -373,7 +350,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../../core/animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -416,6 +396,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/material/normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -496,6 +479,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -539,6 +531,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -690,6 +688,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -863,6 +870,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -941,7 +951,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -955,7 +965,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -963,7 +973,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -999,7 +1009,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>This tutorial explains how to add 3D sound to a game, and how to make sounds play together with events, such as clicking. You learn how to use an Audio Listener and Audio Nodes. You also make use of an Action Listener and a MouseButtonTrigger from the previous <a href="hello_input_system.html" class="page">Hello Input</a> tutorial to make a mouse click trigger a gun shot sound.</p>
+<p>This tutorial explains how to add 3D sound to a game, and how to make sounds play together with events, such as clicking. You learn how to use an Audio Listener and Audio Nodes. You also make use of an Action Listener and a MouseButtonTrigger from the previous <a href="hello_input_system.html" class="xref page">Hello Input</a> tutorial to make a mouse click trigger a gun shot sound.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1039,8 +1049,6 @@ import com.jme3.scene.shape.Box;
 public class HelloAudio extends SimpleApplication {
 
   private AudioNode audio_gun;
-  private AudioNode audio_nature;
-  private Geometry player;
 
   public static void main(String[] args) {
     HelloAudio app = new HelloAudio();
@@ -1053,7 +1061,7 @@ public class HelloAudio extends SimpleApplication {
 
     /** just a blue box floating in space */
     Box box1 = new Box(1, 1, 1);
-    player = new Geometry("Player", box1);
+    Geometry player = new Geometry("Player", box1);
     Material mat1 = new Material(assetManager,"Common/MatDefs/Misc/Unshaded.j3md");
     mat1.setColor("Color", ColorRGBA.Blue);
     player.setMaterial(mat1);
@@ -1074,7 +1082,7 @@ public class HelloAudio extends SimpleApplication {
     rootNode.attachChild(audio_gun);
 
     /* nature sound - keeps playing in a loop. */
-    audio_nature = new AudioNode(assetManager, "Sound/Environment/Ocean Waves.ogg", DataType.Stream);
+    AudioNode audio_nature = new AudioNode(assetManager, "Sound/Environment/Ocean Waves.ogg", DataType.Stream);
     audio_nature.setLooping(true);  // activate continuous playing
     audio_nature.setPositional(true);
     audio_nature.setVolume(3);
@@ -1089,7 +1097,7 @@ public class HelloAudio extends SimpleApplication {
   }
 
   /** Defining the "Shoot" action: Play a gun sound. */
-  private ActionListener actionListener = new ActionListener() {
+  final private ActionListener actionListener = new ActionListener() {
     @Override
     public void onAction(String name, boolean keyPressed, float tpf) {
       if (name.equals("Shoot") &amp;&amp; !keyPressed) {
@@ -1135,8 +1143,7 @@ public class HelloAudio extends SimpleApplication {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  private AudioNode audio_gun;
-  private AudioNode audio_nature;</code></pre>
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  private AudioNode audio_gun;</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1146,7 +1153,7 @@ public class HelloAudio extends SimpleApplication {
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-Java hljs" data-lang="Java">audio_gun = new AudioNode(assetManager, "Sound/Effects/Gun.wav", DataType.Buffer);
     ...
-audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataType.Stream);</code></pre>
+AudioNode audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataType.Stream);</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1252,7 +1259,7 @@ audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataT
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  /** Defining the "Shoot" action: Play a gun sound. */
-  private ActionListener actionListener = new ActionListener() {
+  final private ActionListener actionListener = new ActionListener() {
     @Override
     public void onAction(String name, boolean keyPressed, float tpf) {
       if (name.equals("Shoot") &amp;&amp; !keyPressed) {
@@ -1325,7 +1332,7 @@ audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataT
 <div class="listingblock">
 <div class="content">
 <pre>  /** Defining the "Shoot" action: Play a gun sound. */
-  private ActionListener actionListener = new ActionListener() {
+  final private ActionListener actionListener = new ActionListener() {
     @Override
     public void onAction(String name, boolean keyPressed, float tpf) {
       if (name.equals("Shoot") &amp;&amp; !keyPressed) {
@@ -1347,7 +1354,7 @@ audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataT
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">audio_gunshot = new AudioNode(assetManager, "Sound/Effects/Gun.wav", DataType.Buffer); // buffered
 ...
-audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataType.Stream); // streamed</code></pre>
+AudioNode audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataType.Stream); // streamed</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1438,7 +1445,7 @@ audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataT
 <p>Similarly, you may have game levels where you want one background sound to play globally. In this case, you would make the AudioNode neither positional nor directional (set both to false).</p>
 </li>
 <li>
-<p>If you want sound to be &#8220;absorbed&#8221; by the walls and only broadcast in one direction, you would make this AudioNode directional. This tutorial does not discuss directional sounds, you can read about <a href="../../core/audio/audio.html" class="page">Advanced Audio</a> here.</p>
+<p>If you want sound to be &#8220;absorbed&#8221; by the walls and only broadcast in one direction, you would make this AudioNode directional. This tutorial does not discuss directional sounds, you can read about <a href="../../core/audio/audio.html" class="xref page">Advanced Audio</a> here.</p>
 </li>
 </ul>
 </div>
@@ -1461,7 +1468,7 @@ audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataT
 </td>
 <td class="content">
 <div class="paragraph">
-<p>JME&#8217;s Audio implementation also supports more advanced effects such as reverberation and Doppler effect. Use these &#8220;pro&#8221; features to make audio sound different depending on whether it&#8217;s in the hallway, in a cave, outdoors, or in a carpeted room. Find out more about environmental effects from the sample code included in the jme3test directory and from the advanced <a href="../../core/audio/audio.html" class="page">Advanced Audio</a> docs.</p>
+<p>JME&#8217;s Audio implementation also supports more advanced effects such as reverberation and Doppler effect. Use these &#8220;pro&#8221; features to make audio sound different depending on whether it&#8217;s in the hallway, in a cave, outdoors, or in a carpeted room. Find out more about environmental effects from the sample code included in the jme3test directory and from the advanced <a href="../../core/audio/audio.html" class="xref page">Advanced Audio</a> docs.</p>
 </div>
 </td>
 </tr>
@@ -1483,20 +1490,6 @@ audio_nature = new AudioNode(assetManager, "Sound/Environment/Nature.ogg", DataT
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

@@ -8,14 +8,12 @@
     <link rel="prev" href="material_definitions.html">
     <link rel="next" href="../shader/jme3_shaders.html">
     <meta name="keywords" content="material, texture, MatDefs, light, culling, RenderStates, documentation">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Material Definition Properties">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -25,9 +23,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -61,7 +56,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../release.html">Release Guide</a>
@@ -207,24 +202,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../tutorials/how-to/modeling/blender/mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -373,7 +350,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -416,6 +396,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -496,6 +479,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -539,6 +531,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -690,6 +688,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -863,6 +870,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -941,7 +951,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -955,7 +965,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -963,7 +973,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1007,7 +1017,7 @@
 <p>All Geometries must have Materials. To improve performance, reuse Materials for similar models, don&#8217;t create a new Material object for every Geometry. (E.g. use one bark Material for several tree models.)</p>
 </li>
 <li>
-<p>Each Material is based on one of jme3&#8217;s default Material Definitions (.j3md files) that are included in the engine. Advanced users can create additional custom Material Definitions (see how it&#8217;s done in the <a href="../../getting-started/build_from_sources.html" class="page">jme3 sources</a>).</p>
+<p>Each Material is based on one of jme3&#8217;s default Material Definitions (.j3md files) that are included in the engine. Advanced users can create additional custom Material Definitions (see how it&#8217;s done in the <a href="../../getting-started/build_from_sources.html" class="xref page">jme3 sources</a>).</p>
 </li>
 </ul>
 </div>
@@ -1019,8 +1029,8 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Find out quickly <a href="how_to_use_materials.html" class="page">How to Use Materials</a>, including the most commonly used code samples and RenderStates.<br>
-Or find more background info on <a href="material_definitions.html" class="page">How to use Material Definitions</a>.</p>
+<p>Find out quickly <a href="how_to_use_materials.html" class="xref page">How to Use Materials</a>, including the most commonly used code samples and RenderStates.<br>
+Or find more background info on <a href="material_definitions.html" class="xref page">How to use Material Definitions</a>.</p>
 </div>
 </td>
 </tr>
@@ -1044,8 +1054,8 @@ Or find more background info on <a href="material_definitions.html" class="page"
 <div class="paragraph">
 <p>Looks confusing?<br>
 1) Start learning about <code>Unshaded.j3md</code> and <code>Lighting.j3md</code>, they cover 90% of the cases.<br>
-2) Use <a href="../../sdk/material_editing.html" class="page">the SDK&#8217;s visual material editor</a> to try out and save material settings easily.<br>
-3) The <a href="../../sdk/code_editor.html" class="page">SDK&#8217;s Palette</a> contains drag&amp;drop code snippets for loading materials.</p>
+2) Use <a href="../../sdk/material_editing.html" class="xref page">the SDK&#8217;s visual material editor</a> to try out and save material settings easily.<br>
+3) The <a href="../../sdk/code_editor.html" class="xref page">SDK&#8217;s Palette</a> contains drag&amp;drop code snippets for loading materials.</p>
 </div>
 </td>
 </tr>
@@ -1099,7 +1109,7 @@ Unshaded.j3md</p>
 <p>Use this for simple coloring, texturing, glow, and transparency.</p>
 </div>
 <div class="paragraph">
-<p>See also: <a href="../../tutorials/beginner/hello_material.html" class="page">Hello Material</a></p>
+<p>See also: <a href="../../tutorials/beginner/hello_material.html" class="xref page">Hello Material</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>Texture Maps</strong><br>
@@ -1143,7 +1153,7 @@ Sky.j3md</p>
 <p>A solid sky blue, or use with a custom SkyDome texture.</p>
 </div>
 <div class="paragraph">
-<p>See also: <a href="../util/sky.html" class="page">Sky</a></p>
+<p>See also: <a href="../util/sky.html" class="xref page">Sky</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>setTexture(&#8220;Texture&#8221;, assetManager.loadTexture(&#8220;name&#8221;));<br>
@@ -1160,7 +1170,7 @@ Terrain.j3md</p>
 <p>Splat textures for, e.g. terrains.</p>
 </div>
 <div class="paragraph">
-<p>See also: <a href="../../tutorials/beginner/hello_terrain.html" class="page">Hello Terrain</a></p>
+<p>See also: <a href="../../tutorials/beginner/hello_terrain.html" class="xref page">Hello Terrain</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>setTexture(&#8220;Tex1&#8221;, assetManager.loadTexture(&#8220;name&#8221;));<br>
@@ -1239,7 +1249,7 @@ Particle.j3md</p>
 <p>Does support an optional colored glow effect.</p>
 </div>
 <div class="paragraph">
-<p>See also: <a href="../../tutorials/beginner/hello_effects.html" class="page">Hello Effects</a></p>
+<p>See also: <a href="../../tutorials/beginner/hello_effects.html" class="xref page">Hello Effects</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>setTexture(&#8220;Texture&#8221;, assetManager.loadTexture(&#8220;name&#8221;));<br>
@@ -1268,7 +1278,7 @@ setBoolean(&#8220;PointSprite&#8221;,true);</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Illuminated materials require a <a href="../light/light_and_shadow.html" class="page">light source</a> added to at least one of their parent nodes! (e.g. rootNode.) Illuminated materials are darker on the sides facing away from light sources. They use Phong illumination model (default), or the Ward isotropic gaussian specular shader (WardIso) which looks more like plastic. They do not cast drop shadows unless you use a FilterPostProcessor.</p>
+<p>Illuminated materials require a <a href="../light/light_and_shadow.html" class="xref page">light source</a> added to at least one of their parent nodes! (e.g. rootNode.) Illuminated materials are darker on the sides facing away from light sources. They use Phong illumination model (default), or the Ward isotropic gaussian specular shader (WardIso) which looks more like plastic. They do not cast drop shadows unless you use a FilterPostProcessor.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 3. Standard Illuminated</caption>
@@ -1300,7 +1310,7 @@ Lighting.j3md</p>
 <p>Supports shininess, transparency, and plain material colors (Diffuse, Ambient, Specular).</p>
 </div>
 <div class="paragraph">
-<p>See also: <a href="../../tutorials/beginner/hello_material.html" class="page">Hello Material</a></p>
+<p>See also: <a href="../../tutorials/beginner/hello_material.html" class="xref page">Hello Material</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>Texture Maps</strong><br>
@@ -1773,7 +1783,7 @@ setBlendMode(BlendMode.Off);</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="material_specification.html" class="page">Developer specification of the jME3 material system (.j3md,.j3m)</a></p>
+<p><a href="material_specification.html" class="xref page">Developer specification of the jME3 material system (.j3md,.j3m)</a></p>
 </li>
 </ul>
 </div>
@@ -1793,20 +1803,6 @@ setBlendMode(BlendMode.Off);</p>
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

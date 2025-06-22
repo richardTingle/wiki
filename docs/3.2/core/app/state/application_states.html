@@ -7,14 +7,12 @@
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs/3.4/core/app/state/application_states.html">
     <link rel="prev" href="../update_loop.html">
     <link rel="next" href="../../scene/control/custom_controls.html">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Application States">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -24,9 +22,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -60,7 +55,7 @@
     <a class="nav-link" href="../../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
 </ul>
   </li>
@@ -952,7 +947,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../3.4/documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -966,7 +961,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -974,7 +969,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1010,7 +1005,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <code>com.jme3.app.state.AppState</code> class is a customizable jME3 interface that allows you to control the global game logic, the overall game mechanics. (To control the behaviour of a Spatial, see <a href="../../scene/control/custom_controls.html" class="page">Custom Controls</a> instead. Controls and AppStates can be used together.)</p>
+<p>The <code>com.jme3.app.state.AppState</code> class is a customizable jME3 interface that allows you to control the global game logic, the overall game mechanics. (To control the behaviour of a Spatial, see <a href="../../scene/control/custom_controls.html" class="xref page">Custom Controls</a> instead. Controls and AppStates can be used together.)</p>
 </div>
 </div>
 </div>
@@ -1343,7 +1338,7 @@ stateDetached(asm)</p>
 <h2 id="baseappstate"><a class="anchor" href="#baseappstate"></a>BaseAppState</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A new <a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/app/state/BaseAppState.html">BaseAppState</a> class was introduced as part of the <a href="https://hub.jmonkeyengine.org/t/jmonkeyengine-3-1-alpha-4-released/35478">updates</a> being made to the AppState interface. AbstractAppState is the most minimal of the minimal implementations of the AppState interface. You essentially still need to do everything yourself, including getting the funky enable/disable/initialized/terminate logic right. Now you just extend BaseAppState and you get onEnable() and onDisable() already worked out for you.</p>
+<p>A new <a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/app/state/BaseAppState.html">BaseAppState</a> class was introduced as part of the <a href="https://hub.jmonkeyengine.org/t/jmonkeyengine-3-1-alpha-4-released/35478">updates</a> being made to the AppState interface. AbstractAppState is the most minimal of the minimal implementations of the AppState interface. You essentially still need to do everything yourself, including getting the funky enable/disable/initialized/terminate logic right. Now you just extend BaseAppState and you get onEnable() and onDisable() already worked out for you.</p>
 </div>
 <div class="paragraph">
 <p>Definition:</p>
@@ -1417,7 +1412,7 @@ stateDetached(asm)</p>
 <p>You use BaseAppState as you would AbstractAppState, other than mentioned above, and which one you use is entirely up to you. However, BaseAppState makes your life easier and is the recommended one to use now.</p>
 </div>
 <div class="paragraph">
-<p>See <a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/app/state/BaseAppState.html">BaseAppState</a> for more information.</p>
+<p>See <a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/app/state/BaseAppState.html">BaseAppState</a> for more information.</p>
 </div>
 </div>
 </div>
@@ -1553,20 +1548,6 @@ public class MyAppState extends AbstractAppState {
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../../_/js/site.js"></script>
 <script async src="../../../../../_/js/vendor/highlight.js"></script>
   </body>

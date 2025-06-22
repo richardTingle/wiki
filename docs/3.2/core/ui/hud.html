@@ -8,14 +8,12 @@
     <link rel="prev" href="../gui/nifty_gui_scenarios.html">
     <link rel="next" href="../vr/virtualreality.html">
     <meta name="keywords" content="gui, display, documentation, hud">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Head-Up Display (HUD)">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -25,9 +23,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -61,7 +56,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
 </ul>
   </li>
@@ -953,7 +948,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../3.4/documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -967,7 +962,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -975,7 +970,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1063,7 +1058,7 @@ You will have to write custom controls / buttons / effects if you need them.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Use advanced <a href="../gui/nifty_gui.html" class="page">Nifty GUI</a> integration:</p>
+<p>Use advanced <a href="../gui/nifty_gui.html" class="xref page">Nifty GUI</a> integration:</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Full-featured interactive user interface.<br>
@@ -1076,7 +1071,7 @@ Supports XML and Java layouts.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Use user contributed <abbr title="Graphical User Interface">GUI</abbr> libraries such as <a href="../../contributions/gui/tonegodgui/tonegodgui.html" class="page">tonegodgui</a> or <a href="http://hub.jmonkeyengine.org/t/lemur-api-documentation/27209">Lemur</a>:</p>
+<p>Use user contributed <abbr title="Graphical User Interface">GUI</abbr> libraries such as <a href="../../contributions/gui/tonegodgui/tonegodgui.html" class="xref page">tonegodgui</a> or <a href="http://hub.jmonkeyengine.org/t/lemur-api-documentation/27209">Lemur</a>:</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Both have many features that would be difficult to do with Nifty<br>
@@ -1177,7 +1172,7 @@ guiNode.attachChild(hudText);</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>BitmapFont myFont = assetManager.loadFont("Interface/Fonts/Console.fnt");
+<pre class="highlightjs highlight"><code class="language-none hljs">BitmapFont myFont = assetManager.loadFont("Interface/Fonts/Console.fnt");
 hudText = new BitmapText(myFont, false);</code></pre>
 </div>
 </div>
@@ -1241,7 +1236,7 @@ hudText = new BitmapText(myFont, false);</code></pre>
 <h2 id="advanced-hud-nifty-gui"><a class="anchor" href="#advanced-hud-nifty-gui"></a>Advanced HUD: Nifty GUI</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The recommended approach to create HUDs is using <a href="../gui/nifty_gui.html" class="page">Nifty GUI</a>.</p>
+<p>The recommended approach to create HUDs is using <a href="../gui/nifty_gui.html" class="xref page">Nifty GUI</a>.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1260,7 +1255,7 @@ hudText = new BitmapText(myFont, false);</code></pre>
 <p>The advantage of Nifty <abbr title="Graphical User Interface">GUI</abbr> is that it is well integrated into jME and the jMonkeyEngine SDK, and that it offers all the features that you expect from a professional modern user interface.</p>
 </div>
 <div class="paragraph">
-<p>For HUDs, you basically follow the same instructions as for creating a normal <a href="../gui/nifty_gui.html" class="page">Nifty GUI</a>, you just don&#8217;t pause the game while the HUD is up.</p>
+<p>For HUDs, you basically follow the same instructions as for creating a normal <a href="../gui/nifty_gui.html" class="xref page">Nifty GUI</a>, you just don&#8217;t pause the game while the HUD is up.</p>
 </div>
 </div>
 </div>
@@ -1270,7 +1265,7 @@ hudText = new BitmapText(myFont, false);</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../../sdk/plugin/fonts.html" class="page">Fonts</a></p>
+<p><a href="../../sdk/plugin/fonts.html" class="xref page">Fonts</a></p>
 </li>
 </ul>
 </div>
@@ -1290,20 +1285,6 @@ hudText = new BitmapText(myFont, false);</code></pre>
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

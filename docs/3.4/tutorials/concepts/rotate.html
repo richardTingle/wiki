@@ -7,14 +7,12 @@
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs/3.4/tutorials/concepts/rotate.html">
     <link rel="prev" href="math_cheet_sheet.html">
     <link rel="next" href="math_video_tutorials.html">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="3-D Rotation">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -24,9 +22,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -60,7 +55,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../release.html">Release Guide</a>
@@ -206,24 +201,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../how-to/modeling/blender/mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -372,7 +349,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../../core/animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -415,6 +395,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/material/normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -495,6 +478,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -538,6 +530,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -689,6 +687,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -862,6 +869,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -940,7 +950,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -954,7 +964,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -962,7 +972,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1002,7 +1012,7 @@
 Good news: If you do not understand calculus, there are two simple rules how you get it right.</em></p>
 </div>
 <div class="paragraph">
-<p><strong>3D rotation</strong> is a crazy mathematical operation where you need to multiply all vertices in your object by four floating point numbers; the multiplication is referred to as concatenation, the array of four numbers {x,y,z,w} is referred to as <a href="../../core/math/quaternion.html" class="page">quaternions</a>. Don&#8217;t worry, the 3D engine does the tough work for you. All you need to know is:</p>
+<p><strong>3D rotation</strong> is a crazy mathematical operation where you need to multiply all vertices in your object by four floating point numbers; the multiplication is referred to as concatenation, the array of four numbers {x,y,z,w} is referred to as <a href="../../core/math/quaternion.html" class="xref page">quaternions</a>. Don&#8217;t worry, the 3D engine does the tough work for you. All you need to know is:</p>
 </div>
 <div class="paragraph">
 <p><strong>The Quaternion</strong> is an object capable of deep-freezing and storing a rotation that you can apply to a 3D object.</p>
@@ -1259,7 +1269,7 @@ cylinder.updateGeometry();</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/math/Quaternion.html">com.jme3.math.Quaternion</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/math/Quaternion.html">com.jme3.math.Quaternion</a></p>
 </li>
 </ul>
 </div>
@@ -1335,7 +1345,7 @@ For a deeper explanation, see this forum thread: <a href="https://hub.jmonkeyeng
 <p>This here is just about rotation, but there are three types of 3-D transformation: rotate, scale, and translate.</p>
 </div>
 <div class="paragraph">
-<p>You can do all transformations in individual steps (and then update the objects geometry and bounds), or you can combine them and transform the object in one step. If you have a lot of repetitive movement going on in your game it&#8217;s worth learning more about <a href="../../core/math/matrix.html" class="page">Matrix4f</a> for optimization. JME can also help you interpolate the steps between two fixed transformations.</p>
+<p>You can do all transformations in individual steps (and then update the objects geometry and bounds), or you can combine them and transform the object in one step. If you have a lot of repetitive movement going on in your game it&#8217;s worth learning more about <a href="../../core/math/matrix.html" class="xref page">Matrix4f</a> for optimization. JME can also help you interpolate the steps between two fixed transformations.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1344,13 +1354,13 @@ For a deeper explanation, see this forum thread: <a href="https://hub.jmonkeyeng
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/math/Transform.html">com.jme.math.Transform</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/math/Transform.html">com.jme.math.Transform</a></p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>In case you missed it, see also <a href="../../core/math/quaternion.html" class="page">quaternion</a>.</p>
+<p>In case you missed it, see also <a href="../../core/math/quaternion.html" class="xref page">quaternion</a>.</p>
 </li>
 </ul>
 </div>
@@ -1370,20 +1380,6 @@ For a deeper explanation, see this forum thread: <a href="https://hub.jmonkeyeng
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

@@ -7,14 +7,12 @@
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs/3.4/sdk/development/extension_library.html">
     <link rel="prev" href="projects_assets.html">
     <link rel="next" href="model_loader.html">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Creating an extension library plugin">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -24,9 +22,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -60,7 +55,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
 </ul>
   </li>
@@ -952,7 +947,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../3.4/documentation.html">3.4</a>
         </li>
         <li class="version is-current">
@@ -966,7 +961,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -974,7 +969,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1012,7 +1007,7 @@
 <p>This page describes how you can wrap any jar library into a plugin that a jMonkeyEngine SDK user can download, install and then use the contained library in his own game projects.</p>
 </div>
 <div class="paragraph">
-<p>Make sure you have your SDK set up for plugin development <a href="setup.html" class="page">as described here</a>.</p>
+<p>Make sure you have your SDK set up for plugin development <a href="setup.html" class="xref page">as described here</a>.</p>
 </div>
 <div class="paragraph">
 <p>Creating the plugin project (in jMonkeyEngine SDK):</p>
@@ -1096,7 +1091,7 @@
 <p>Note that the files in the release folder are <strong>not</strong> automatically updated when the library changes, you have to pack and replace the jar and zip files manually. See the build script extension in the link below on how you can make your module build script do that automatically.</p>
 </div>
 <div class="paragraph">
-<p>After you are done, you can <a href="setup.html#jmonkeyengine-sdk-contributions-update-center" class="page">contribute the plugin in the jMonkeyEngine SDK contribution update center</a>.</p>
+<p>After you are done, you can <a href="setup.html#jmonkeyengine-sdk-contributions-update-center" class="xref page">contribute the plugin in the jMonkeyEngine SDK contribution update center</a>.</p>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="projects_assets.html">Projects and Assets</a></span>
@@ -1112,20 +1107,6 @@
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

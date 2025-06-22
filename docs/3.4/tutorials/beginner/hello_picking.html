@@ -8,14 +8,12 @@
     <link rel="prev" href="hello_animation.html">
     <link rel="next" href="hello_collision.html">
     <meta name="keywords" content="beginner, documentation, intro, node, ray, click, collision, keyinput, input">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="jMonkeyEngine 3 Tutorial (8) - Hello Picking">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -25,9 +23,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -61,7 +56,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../release.html">Release Guide</a>
@@ -207,24 +202,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../how-to/modeling/blender/mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -373,7 +350,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../core/animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../../core/animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -416,6 +396,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/material/normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -496,6 +479,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -539,6 +531,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../core/vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../core/vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -690,6 +688,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -863,6 +870,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -941,7 +951,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -955,7 +965,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -963,7 +973,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1005,7 +1015,7 @@
 <p>You can pick something by either pressing a key on the keyboard, or by clicking with the mouse. In either case, you identify the target by aiming a ray –a straight line– into the scene. This method to implement picking is called <em>ray casting</em> (which is not the same as <em>ray tracing</em>).</p>
 </div>
 <div class="paragraph">
-<p>This tutorial relies on what you have learned in the <a href="hello_input_system.html" class="page">Hello Input</a> tutorial. You find more related code samples under <a href="../../core/input/mouse_picking.html" class="page">Mouse Picking</a> and <a href="../../core/collision/collision_and_intersection.html" class="page">Collision and Intersection</a>.</p>
+<p>This tutorial relies on what you have learned in the <a href="hello_input_system.html" class="xref page">Hello Input</a> tutorial. You find more related code samples under <a href="../../core/input/mouse_picking.html" class="xref page">Mouse Picking</a> and <a href="../../core/collision/collision_and_intersection.html" class="xref page">Collision and Intersection</a>.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -1077,8 +1087,8 @@ public class HelloPicking extends SimpleApplication {
     inputManager.addListener(actionListener, "Shoot");
   }
   /** Defining the "Shoot" action: Determine what was hit and how to respond. */
-  private ActionListener actionListener = new ActionListener() {
-
+  final private ActionListener actionListener = new ActionListener() {
+    @Override
     public void onAction(String name, boolean keyPressed, float tpf) {
       if (name.equals("Shoot") &amp;&amp; !keyPressed) {
         // 1. Reset results list.
@@ -1086,8 +1096,6 @@ public class HelloPicking extends SimpleApplication {
         // 2. Aim the ray from cam loc to cam direction.
         Ray ray = new Ray(cam.getLocation(), cam.getDirection());
         // 3. Collect intersections between Ray and Shootables in results list.
-        // DO NOT check collision with the root node, or else ALL collisions will hit the
-        // skybox! Always make a separate node for objects you want to collide with.
         shootables.collideWith(ray, results);
         // 4. Print the results
         System.out.println("----- Collisions? " + results.size() + "-----");
@@ -1115,7 +1123,7 @@ public class HelloPicking extends SimpleApplication {
   };
 
   /** A cube object for target practice */
-  protected Geometry makeCube(String name, float x, float y, float z) {
+  private Geometry makeCube(String name, float x, float y, float z) {
     Box box = new Box(1, 1, 1);
     Geometry cube = new Geometry(name, box);
     cube.setLocalTranslation(x, y, z);
@@ -1126,7 +1134,7 @@ public class HelloPicking extends SimpleApplication {
   }
 
   /** A floor to show that the "shot" can go through several objects. */
-  protected Geometry makeFloor() {
+  private Geometry makeFloor() {
     Box box = new Box(15, .2f, 15);
     Geometry floor = new Geometry("the Floor", box);
     floor.setLocalTranslation(0, -4, -5);
@@ -1137,7 +1145,7 @@ public class HelloPicking extends SimpleApplication {
   }
 
   /** A red ball that marks the last spot that was "hit" by the "shot". */
-  protected void initMark() {
+  private void initMark() {
     Sphere sphere = new Sphere(30, 30, 0.2f);
     mark = new Geometry("BOOM!", sphere);
     Material mark_mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
@@ -1146,19 +1154,18 @@ public class HelloPicking extends SimpleApplication {
   }
 
   /** A centred plus sign to help the player aim. */
-  protected void initCrossHairs() {
+  private void initCrossHairs() {
     setDisplayStatView(false);
     guiFont = assetManager.loadFont("Interface/Fonts/Default.fnt");
-    BitmapText ch = new BitmapText(guiFont, false);
+    BitmapText ch = new BitmapText(guiFont);
     ch.setSize(guiFont.getCharSet().getRenderedSize() * 2);
     ch.setText("+"); // crosshairs
     ch.setLocalTranslation( // center
-      settings.getWidth() / 2 - ch.getLineWidth()/2,
-      settings.getHeight() / 2 + ch.getLineHeight()/2, 0);
+    settings.getWidth() / 2 - ch.getLineWidth()/2, settings.getHeight() / 2 + ch.getLineHeight()/2, 0);
     guiNode.attachChild(ch);
   }
 
-  protected Spatial makeCharacter() {
+  private Spatial makeCharacter() {
     // load a character from jme3test-test-data
     Spatial golem = assetManager.loadModel("Models/Oto/Oto.mesh.xml");
     golem.scale(0.5f);
@@ -1339,7 +1346,7 @@ public class HelloPicking extends SimpleApplication {
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">  /** Defining the "Shoot" action: Determine what was hit and how to respond. */
-  private ActionListener actionListener = new ActionListener() {
+  final private ActionListener actionListener = new ActionListener() {
     @Override
     public void onAction(String name, boolean keyPressed, float tpf) {
       if (name.equals("Shoot") &amp;&amp; !keyPressed) {
@@ -1531,7 +1538,7 @@ Here are some tips:</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p><a href="solutions.html#hello-picking" class="page">Some proposed solutions</a><br>
+<p><a href="solutions.html#hello-picking" class="xref page">Some proposed solutions</a><br>
 <strong>Be sure to try to solve them for yourself first!</strong></p>
 </div>
 </td>
@@ -1576,20 +1583,6 @@ Here are some tips:</p>
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

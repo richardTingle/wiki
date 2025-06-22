@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Physics: Gravity, Collisions, Forces :: jMonkeyEngine Docs</title>
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs/3.4/physics/physics.html">
-    <link rel="prev" href="../core/vr/virtualreality.html">
+    <link rel="prev" href="../core/vr/virtualrealitycontrollers.html">
     <link rel="next" href="bullet_multithreading.html">
     <meta name="keywords" content="physics, documentation, control">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Physics: Gravity, Collisions, Forces">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -25,9 +23,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -61,7 +56,7 @@
     <a class="nav-link" href="../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../release.html">Release Guide</a>
@@ -207,24 +202,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../tutorials/how-to/modeling/blender/mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -373,7 +350,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../core/animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../core/animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core/animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../core/cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -416,6 +396,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../core/system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core/material/normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -496,6 +479,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core/renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -539,6 +531,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../core/vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core/vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core/vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -690,6 +688,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -863,6 +870,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -941,7 +951,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -955,7 +965,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -963,7 +973,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1004,7 +1014,7 @@
 <p>The jMonkeyEngine3 has built-in support for <a href="http://jbullet.advel.cz">jBullet Physics</a> (based on <a href="http://bulletphysics.org">Bullet Physics</a>) via the <code>com.jme3.bullet</code> package. This article focuses mostly on the RigidBodyControl, but also introduces you to others.</p>
 </div>
 <div class="paragraph">
-<p>If you are looking for info on how to respond to physics events such as collisions, read about <a href="collision/physics_listeners.html" class="page">Physics Listeners</a>.</p>
+<p>If you are looking for info on how to respond to physics events such as collisions, read about <a href="collision/physics_listeners.html" class="xref page">Physics Listeners</a>.</p>
 </div>
 </div>
 </div>
@@ -1306,7 +1316,7 @@ Disc-shaped objects like wheels, plates.</p>
 <p>CapsuleCollisionShape()</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>A built-in compound shape of a vertical cylinder with one sphere at the top and one sphere at the bottom. Typically used with <a href="control/walking_character.html" class="page">CharacterControls</a>: A cylinder-shaped body does not get stuck at corners and vertical obstacles; the rounded top and bottom do not get stuck on stair steps and ground obstacles.</p>
+<p>A built-in compound shape of a vertical cylinder with one sphere at the top and one sphere at the bottom. Typically used with <a href="control/walking_character.html" class="xref page">CharacterControls</a>: A cylinder-shaped body does not get stuck at corners and vertical obstacles; the rounded top and bottom do not get stuck on stair steps and ground obstacles.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Persons, animals.</p>
@@ -1586,7 +1596,7 @@ Solid immobile floors, walls, static obstacles.</p>
 <p>GhostControl</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Use for collision and intersection detection between physical objects. A GhostControl itself is <em>non-solid</em> and invisible. GhostControl moves with the Spatial it is attached to. Use GhostControls to <a href="collision/physics_listeners.html" class="page">implement custom game interactions</a> by adding it to a visible Geometry.</p>
+<p>Use for collision and intersection detection between physical objects. A GhostControl itself is <em>non-solid</em> and invisible. GhostControl moves with the Spatial it is attached to. Use GhostControls to <a href="collision/physics_listeners.html" class="xref page">implement custom game interactions</a> by adding it to a visible Geometry.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>A monster&#8217;s &#8220;aggro&#8221; radius, CharacterControl collisions, motion detectors, photo-electric alarm sensors, poisonous or radioactive perimeters, life-draining ghosts, etc.</p>
@@ -1614,7 +1624,7 @@ Solid immobile floors, walls, static obstacles.</p>
 PhysicsVehicleWheel</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Special Control used for <a href="control/vehicles.html" class="page">&quot;terrestrial&quot;  vehicles with suspension and wheels</a>.</p>
+<p>Special Control used for <a href="control/vehicles.html" class="xref page">&quot;terrestrial&quot;  vehicles with suspension and wheels</a>.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Cars, tanks, hover crafts, ships, motorcycles…</p>
@@ -1625,7 +1635,7 @@ PhysicsVehicleWheel</p>
 <p>CharacterControl</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Special Control used for <a href="control/walking_character.html" class="page">Walking Character</a>s.</p>
+<p>Special Control used for <a href="control/walking_character.html" class="xref page">Walking Character</a>s.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Upright walking persons, animals, robots…</p>
@@ -1636,7 +1646,7 @@ PhysicsVehicleWheel</p>
 <p>BetterCharacterControl</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Special Control used for <a href="control/walking_character.html" class="page">Walking Character</a>s.</p>
+<p>Special Control used for <a href="control/walking_character.html" class="xref page">Walking Character</a>s.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Upright walking persons, animals, robots. Replaces CharacterControl.</p>
@@ -1647,7 +1657,7 @@ PhysicsVehicleWheel</p>
 <p>RagDollControl</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Special Control used for <a href="control/ragdoll.html" class="page">collapsing, flailing, or falling characters</a></p>
+<p>Special Control used for <a href="control/ragdoll.html" class="xref page">collapsing, flailing, or falling characters</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Falling persons, animals, robots, &#8220;Rag&#8221; dolls</p>
@@ -2181,7 +2191,7 @@ setKinematic(false);</p>
 <p>When they collide, Kinematics push dynamic objects, but a dynamic object never pushes a Kinematic.</p>
 </li>
 <li>
-<p>You can hang kinematics up &#8220;in mid-air&#8221; and attach other PhysicsControls to them using <a href="joint/hinges_and_joints.html" class="page">hinges and joints</a>. Picture them as &#8220;air hooks&#8221; for flying aircraft carriers, floating islands in the clouds, suspension bridges, swings, chains…</p>
+<p>You can hang kinematics up &#8220;in mid-air&#8221; and attach other PhysicsControls to them using <a href="joint/hinges_and_joints.html" class="xref page">hinges and joints</a>. Picture them as &#8220;air hooks&#8221; for flying aircraft carriers, floating islands in the clouds, suspension bridges, swings, chains…</p>
 </li>
 <li>
 <p>You can use Kinematics to create mobile remote-controlled physical objects, such as moving elevator platforms, flying blimps/airships. You have full control how Kinematics move, they never &#8220;fall&#8221; or &#8220;topple&#8221; over.</p>
@@ -2196,7 +2206,7 @@ setKinematic(false);</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The position of a kinematic RigidBodyControl is updated automatically depending on its spatial&#8217;s translation. You move Spatials with a kinematic RigidBodyControl programmatically, that means you write translation and rotation code in the update loop. You describe the motion of kinematic objects either by using methods such as <code>setLocalTranslation()</code> or <code>move()</code>, or by using a <a href="../core/cinematic/motionpath.html" class="page">MotionPath</a>.</p>
+<p>The position of a kinematic RigidBodyControl is updated automatically depending on its spatial&#8217;s translation. You move Spatials with a kinematic RigidBodyControl programmatically, that means you write translation and rotation code in the update loop. You describe the motion of kinematic objects either by using methods such as <code>setLocalTranslation()</code> or <code>move()</code>, or by using a <a href="../core/cinematic/motionpath.html" class="xref page">MotionPath</a>.</p>
 </div>
 </td>
 </tr>
@@ -2428,14 +2438,14 @@ removeCollideWithGroup(COLLISION_GROUP_01)</p>
 </li>
 <li>
 <p><strong>Need more interactivity?</strong> You can actively <em>control</em> a physical game by triggering forces. You may also want to be able <em>respond</em> to collisions, e.g. by subtracting health, awarding points, or by playing a sound.<br>
-<strong>Solution:</strong> To specify how the game responds to collisions, you use <a href="collision/physics_listeners.html" class="page">Physics Listeners</a>.</p>
+<strong>Solution:</strong> To specify how the game responds to collisions, you use <a href="collision/physics_listeners.html" class="xref page">Physics Listeners</a>.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../core/vr/virtualreality.html">Virtual Reality</a></span>
+  <span class="prev"><a href="../core/vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a></span>
   <span class="next"><a href="bullet_multithreading.html">Multi-Threaded Physics</a></span>
 </nav>
 </article>
@@ -2448,20 +2458,6 @@ removeCollideWithGroup(COLLISION_GROUP_01)</p>
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
   </body>

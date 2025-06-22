@@ -8,14 +8,12 @@
     <link rel="prev" href="how_to_use_materials.html">
     <link rel="next" href="material_definitions.html">
     <meta name="keywords" content="material, texture, file, sdk, wireframe, documentation">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Saving and Loading Materials with .j3m Files">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -25,9 +23,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -61,7 +56,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../release.html">Release Guide</a>
@@ -207,24 +202,6 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../../tutorials/how-to/modeling/blender/mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -373,7 +350,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -416,6 +396,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -496,6 +479,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -539,6 +531,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -690,6 +688,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -863,6 +870,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -941,7 +951,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -955,7 +965,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -963,7 +973,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -999,7 +1009,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>In the <a href="material_definitions.html" class="page">Material Definitions</a> article you learned how to configure <a href="materials_overview.html" class="page">Materials</a> programmatically in Java code. If you have certain commonly used Materials that never change, you can clean up the amount of Java code that clutters your init method, by moving material settings into .j3m files. Then later in your code, you only need to call one setter instead of several to apply the material.</p>
+<p>In the <a href="material_definitions.html" class="xref page">Material Definitions</a> article you learned how to configure <a href="materials_overview.html" class="xref page">Materials</a> programmatically in Java code. If you have certain commonly used Materials that never change, you can clean up the amount of Java code that clutters your init method, by moving material settings into .j3m files. Then later in your code, you only need to call one setter instead of several to apply the material.</p>
 </div>
 <div class="paragraph">
 <p>If you want to colorize simple shapes (one texture all around), then .j3m are the most easily customizable solution. J3m files can contain texture mapped materials, but as usual you have to create the textures in an external editor, especially if you use UV-mapped textures.</p>
@@ -1052,7 +1062,7 @@
 <p><code>shiny bumpy rock</code> is a descriptive string that you can make up. Choose a name to help you remember for what you intend to use this material.</p>
 </li>
 <li>
-<p>After the colon, specify on which <a href="materials_overview.html" class="page">Materials</a> definition you base this Material.</p>
+<p>After the colon, specify on which <a href="materials_overview.html" class="xref page">Materials</a> definition you base this Material.</p>
 </li>
 </ol>
 </div>
@@ -1391,7 +1401,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>See the <a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/RenderState.html">RenderState</a> javadoc for a detailed explanation of render states.</p>
+<p>See the <a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/RenderState.html">RenderState</a> javadoc for a detailed explanation of render states.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1409,7 +1419,7 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/RenderState.html#setWireframe-boolean-">Wireframe</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/RenderState.html#setWireframe-boolean-">Wireframe</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>(Boolean)</p>
@@ -1420,7 +1430,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/RenderState.html#setFaceCullMode-com.jme3.material.RenderState.FaceCullMode-">FaceCull</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/RenderState.html#setFaceCullMode-com.jme3.material.RenderState.FaceCullMode-">FaceCull</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>(Enum: FaceCullMode)</p>
@@ -1431,7 +1441,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/RenderState.html#setDepthWrite-boolean-">DepthWrite</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/RenderState.html#setDepthWrite-boolean-">DepthWrite</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>(Boolean)</p>
@@ -1442,7 +1452,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/RenderState.html#setDepthTest-boolean-">DepthTest</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/RenderState.html#setDepthTest-boolean-">DepthTest</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>(Boolean)</p>
@@ -1453,7 +1463,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/RenderState.html#setBlendMode-com.jme3.material.RenderState.BlendMode-">Blend</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/RenderState.html#setBlendMode-com.jme3.material.RenderState.BlendMode-">Blend</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>(Enum: BlendMode)</p>
@@ -1464,7 +1474,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/Material.html#setFloat-java.lang.String-float-">AlphaDiscardThreshold</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/Material.html#setFloat-java.lang.String-float-">AlphaDiscardThreshold</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>(Float)</p>
@@ -1476,7 +1486,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/RenderState.html#setPolyOffset-float-float-">PolyOffset</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/RenderState.html#setPolyOffset-float-float-">PolyOffset</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>(Float, Float)</p>
@@ -1487,7 +1497,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/material/RenderState.html#setColorWrite-boolean-">ColorWrite</a></p>
+<p><a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/material/RenderState.html#setColorWrite-boolean-">ColorWrite</a></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>(Boolean)</p>
@@ -1521,7 +1531,7 @@ rootNode.attachChild(signpost);</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>Material Signpost : Common/MatDefs/Light/Lighting.j3md {
+<pre class="highlightjs highlight"><code class="language-none hljs">Material Signpost : Common/MatDefs/Light/Lighting.j3md {
     MaterialParameters {
          Shininess: 4.0
          DiffuseMap:  Models/Sign Post/Sign Post.jpg
@@ -1555,7 +1565,7 @@ mat.setBoolean("UseMaterialColors", true);</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>Material Pong Rock : Common/MatDefs/Light/Lighting.j3md {
+<pre class="highlightjs highlight"><code class="language-none hljs">Material Pong Rock : Common/MatDefs/Light/Lighting.j3md {
      MaterialParameters {
          Shininess: 8.0
          DiffuseMap: Repeat Textures/Terrain/Pond/Pond.png
@@ -1575,7 +1585,7 @@ mat.setBoolean("UseMaterialColors", true);</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>Material Leaves : Common/MatDefs/Light/Lighting.j3md {
+<pre class="highlightjs highlight"><code class="language-none hljs">Material Leaves : Common/MatDefs/Light/Lighting.j3md {
 
     Transparent On
 
@@ -1609,7 +1619,7 @@ mat.setBoolean("UseMaterialColors", true);</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="material_specification.html" class="page">Developer specification of the jME3 material system (.j3md,.j3m)</a></p>
+<p><a href="material_specification.html" class="xref page">Developer specification of the jME3 material system (.j3md,.j3m)</a></p>
 </li>
 </ul>
 </div>
@@ -1629,20 +1639,6 @@ mat.setBoolean("UseMaterialColors", true);</code></pre>
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

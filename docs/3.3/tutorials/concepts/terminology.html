@@ -7,14 +7,12 @@
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs/3.4/tutorials/concepts/terminology.html">
     <link rel="prev" href="scenegraph_for_dummies.html">
     <link rel="next" href="transparency_sorting.html">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="3D Game Development Terminology">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -24,9 +22,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -60,7 +55,7 @@
     <a class="nav-link" href="../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
 </ul>
   </li>
@@ -952,7 +947,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../3.4/documentation.html">3.4</a>
         </li>
         <li class="version is-current">
@@ -966,7 +961,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -974,7 +969,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1410,7 +1405,7 @@ Set the Specular color to ColorRGBA.Black to switch off shininess.</p>
 <p>You create a Cube Map to represent your environment; Sphere Maps are also possible, but often look distorted. Basically you give the environment map a set of images showing a &#8220;360°&#8221; view of the background scene – very similar to a skybox. The renderer maps the environment on the texture of the reflective surface, which results in an acceptable &#8220;glass/mirror/water&#8221; effect. Just like a skybox, the reflection map is static, so dynamic things (such as the player walking) are not part of the reflection. (!)</p>
 </div>
 <div class="paragraph">
-<p>See also: <a href="../../core/effect/water.html" class="page">Water</a>.</p>
+<p>See also: <a href="../../core/effect/water.html" class="xref page">Water</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1422,7 +1417,7 @@ Set the Specular color to ColorRGBA.Black to switch off shininess.</p>
 <div class="sect2">
 <h3 id="procedural-textures"><a class="anchor" href="#procedural-textures"></a>Procedural Textures</h3>
 <div class="paragraph">
-<p>A procedural texture is generated from repeating one small image, plus some pseudo-random, gradient variations (called Perlin noise). Procedural textures look more natural than static rectangular textures, and they look less distorted on spheres. On big meshes, their repetitiveness is much less noticeable than with tiled seamless textures. Procedural textures are ideal for irregular large-area textures like grass, soil, rock, rust, and walls. Use the <a href="../../sdk/neotexture.html" class="page">jMonkeyEngine SDK NeoTexture plugin</a> to create them.</p>
+<p>A procedural texture is generated from repeating one small image, plus some pseudo-random, gradient variations (called Perlin noise). Procedural textures look more natural than static rectangular textures, and they look less distorted on spheres. On big meshes, their repetitiveness is much less noticeable than with tiled seamless textures. Procedural textures are ideal for irregular large-area textures like grass, soil, rock, rust, and walls. Use the <a href="../../sdk/neotexture.html" class="xref page">jMonkeyEngine SDK NeoTexture plugin</a> to create them.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -1749,13 +1744,13 @@ In 3D space, speaking of an orthogonal only makes sense with respect to a plane.
 <div class="sect3">
 <h4 id="slerp"><a class="anchor" href="#slerp"></a>Slerp</h4>
 <div class="paragraph">
-<p>Slerp is how we pronounce spherical linear interpolation when we are in a hurry. A slerp is an interpolated transformation that is used as a simple &#8220;animation&#8221; in 3D engines. You define a start and end state, and the slerp interpolates a constant-speed transition from one state to the other. You can play the motion, pause it at various percentages (values between 0.0 and 1.0), and play it backwards and forwards. <a href="https://javadoc.jmonkeyengine.org/v3.3.2-stable/com/jme3/math/Quaternion.html#slerp-com.jme3.math.Quaternion-com.jme3.math.Quaternion-float-">JavaDoc: slerp()</a></p>
+<p>Slerp is how we pronounce spherical linear interpolation when we are in a hurry. A slerp is an interpolated transformation that is used as a simple &#8220;animation&#8221; in 3D engines. You define a start and end state, and the slerp interpolates a constant-speed transition from one state to the other. You can play the motion, pause it at various percentages (values between 0.0 and 1.0), and play it backwards and forwards. <a href="https://javadoc.jmonkeyengine.org/v3.4.1-stable/com/jme3/math/Quaternion.html#slerp-com.jme3.math.Quaternion-com.jme3.math.Quaternion-float-">JavaDoc: slerp()</a></p>
 </div>
 <div class="paragraph">
 <p>Example: A burning meteorite Geometry slerps from &#8220;position p1, rotation r1, scale s1&#8221; in the sky down to &#8220;p2, r2, s2&#8221; into a crater.</p>
 </div>
 <div class="paragraph">
-<p><a href="math.html" class="page">Learn more about 3D maths here.</a></p>
+<p><a href="math.html" class="xref page">Learn more about 3D maths here.</a></p>
 </div>
 </div>
 </div>
@@ -1799,20 +1794,6 @@ In 3D space, speaking of an orthogonal only makes sense with respect to a plane.
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

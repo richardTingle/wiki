@@ -7,14 +7,12 @@
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs-wiki/3.4/atom_editor.html">
     <link rel="prev" href="emoji.html">
     <link rel="next" href="atom_snippets.html">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Atom Editor for Wiki Editing">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -24,9 +22,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -85,7 +80,7 @@
     <li class="component">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../docs/3.4/documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -99,7 +94,7 @@
     <li class="component is-current">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -107,7 +102,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -126,7 +121,7 @@
     <li><a href="atom_editor.html">Atom Editor</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/jMonkeyEngine/wiki/edit/master/docs-wiki/modules/ROOT/pages/atom_editor.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/richardTingle/wiki/edit/master/docs-wiki/modules/ROOT/pages/atom_editor.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <article class="doc">
@@ -257,7 +252,7 @@ You can add more GitHub controls to the editor by adding the package <code><stro
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>https://github.com/jMonkeyEngine/wiki</code></pre>
+<pre class="highlightjs highlight"><code class="language-none hljs">https://github.com/jMonkeyEngine/wiki</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -291,7 +286,7 @@ You can add more GitHub controls to the editor by adding the package <code><stro
 <p>Open your <code>.gitconfig</code> file (located in USER_HOME) and add:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>[user]
+<pre class="highlightjs highlight"><code class="language-none hljs">[user]
         name = yourname
         email = youremail</code></pre>
 </div>
@@ -456,7 +451,7 @@ As a non-member, when there is interaction between the Wiki repository and your 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>= My Title Goes here</code></pre>
+<pre class="highlightjs highlight"><code class="language-none hljs">= My Title Goes here</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -480,7 +475,7 @@ As a non-member, when there is interaction between the Wiki repository and your 
 <p><a href="https://asciidoctor.org/docs/user-manual/">Asciidoctor User Manual</a></p>
 </li>
 <li>
-<p><a href="emoji.html#how-to-use-emoji-in-the-wiki" class="page">How to use emoji in the wiki</a></p>
+<p><a href="emoji.html#how-to-use-emoji-in-the-wiki" class="xref page">How to use emoji in the wiki</a></p>
 </li>
 </ul>
 </div>
@@ -505,7 +500,7 @@ Snippets are an incredibly powerful way to quickly generate commonly needed code
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>'.source.asciidoc':
+<pre class="highlightjs highlight"><code class="language-none hljs">'.source.asciidoc':
   'Cross reference internal element, same page':
     'prefix': 'xrefI'
     'body': '&lt;&lt;${1:reference-a-section-in-the-same-page},${2:custom label text}&gt;&gt;'</code></pre>
@@ -527,7 +522,7 @@ A <kbd>Tab</kbd> key in the above code is set by wraping any text to be tabbed w
 </table>
 </div>
 <div class="paragraph">
-<p>You can help the jMonkey community by adding new snippets. Use your editor and edit the <a href="atom_snippets.html" class="page">Atom Snippets</a> document. Make sure to announce any proposed changes on the <a href="https://hub.jmonkeyengine.org/">jMonkeyEngine Forum</a> under the topic &#8220;Documentation&#8221; first so others are aware and can test out your proposed change.</p>
+<p>You can help the jMonkey community by adding new snippets. Use your editor and edit the <a href="atom_snippets.html" class="xref page">Atom Snippets</a> document. Make sure to announce any proposed changes on the <a href="https://hub.jmonkeyengine.org/">jMonkeyEngine Forum</a> under the topic &#8220;Documentation&#8221; first so others are aware and can test out your proposed change.</p>
 </div>
 <hr>
 <div class="paragraph">
@@ -574,20 +569,6 @@ A <kbd>Tab</kbd> key in the above code is set by wraping any text to be tabbed w
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../_/js/site.js"></script>
 <script async src="../../_/js/vendor/highlight.js"></script>
   </body>

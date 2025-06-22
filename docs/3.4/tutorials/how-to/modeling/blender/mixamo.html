@@ -7,14 +7,12 @@
     <link rel="canonical" href="https://wiki.jmonkeyengine.org/docs/3.4/tutorials/how-to/modeling/blender/mixamo.html">
     <link rel="prev" href="makehuman_blender_ogrexml_toolchain.html">
     <link rel="next" href="../../debugging.html">
-    <meta name="generator" content="Antora 2.3.3">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../../../_/css/site.css">
 <meta property="og:image" content="https://wiki.jmonkeyengine.org/_/img/iconx128.png">
 <meta property="og:description" content="Animating Blender Models With Mixamo">
 <meta property="og:title" content="jMonkeyEngine Docs">
 <link rel="stylesheet" href="../../../../../../_/css/site-extra.css">
-<link rel="stylesheet" href="../../../../../../_/css/vendor/docsearch.min.css">
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
 <link rel="icon" href="../../../../../../_/img/favicon.ico" type="image/x-icon">
   </head>
   <body class="article">
@@ -24,9 +22,6 @@
       <a class="navbar-item" href="https://wiki.jmonkeyengine.org">
         <img alt="" src="../../../../../../_/img/jme-logo.png" height="32" type="image/x-icon">
       </a>
-      <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
-      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -60,7 +55,7 @@
     <a class="nav-link" href="../../../../documentation.html">Getting Started</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.3.2-stable">JavaDoc</a>
+    <a class="nav-link" href="https://javadoc.jmonkeyengine.org/v3.4.1-stable">JavaDoc</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../../../release.html">Release Guide</a>
@@ -206,24 +201,6 @@
 <ul class="nav-list">
   <li class="nav-item is-current-page" data-depth="4">
     <a class="nav-link" href="mixamo.html">Blender Models</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Video</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/jHgAgTWIers?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 1- Download Model</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/GQJSrOpNQwI?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 2- Rig and Animate</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/JzRe2Dxbcmc?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 3- Import to JME</a>
-  </li>
-  <li class="nav-item" data-depth="5">
-    <a class="nav-link" href="https://youtu.be/8wwDRDJop7k?list=PLv6qR9TGkz8RcUr-fOHI2SksWA4BAU9TS">Part 4- Play Animation</a>
-  </li>
-</ul>
   </li>
 </ul>
   </li>
@@ -372,7 +349,10 @@
     <span class="nav-text">Animation, Scene</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../../../core/animation/animation.html">Animation-Old</a>
+    <a class="nav-link" href="../../../../core/animation/animation_new.html">Animation with AnimComposer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/animation/animation.html">Animation-Old (AnimControl)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../../../core/cinematic/cinematics.html">Cinematics (cutscenes, fake destruction physics)</a>
@@ -415,6 +395,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../../../core/system/jme3_srgbpipeline.html">Gamma Correction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/material/normal_types.html">Normal Map Conventions</a>
   </li>
 </ul>
   </li>
@@ -495,6 +478,15 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rendering</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/renderer/render_pipeline.html">Render Pipelines</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <span class="nav-text">User Interaction</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
@@ -538,6 +530,12 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../../../core/vr/virtualreality.html">Virtual Reality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/vr/legacyOpenVr.html">Virtual Reality Legacy Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../../core/vr/virtualrealitycontrollers.html">Virtual Reality Legacy Controller Support</a>
   </li>
 </ul>
   </li>
@@ -689,6 +687,15 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../../../contributions/tools/charts.html">Visualizing Maps in JME3 (Marine Charts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../../../contributions/vr/topic_contributions_vr.html">Virtual Reality (And augmented reality)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../contributions/contributions.html#tamarin-openxr">Tamarin OpenXR</a>
   </li>
 </ul>
   </li>
@@ -862,6 +869,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../../../sdk/vehicle_creator.html">Vehicle Creator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../../sdk/assetbrowser.html">Asset Browser</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -940,7 +950,7 @@
     <li class="component is-current">
       <span class="title">JME</span>
       <ul class="versions">
-        <li class="version is-current is-latest">
+        <li class="version is-current">
           <a href="../../../../documentation.html">3.4</a>
         </li>
         <li class="version">
@@ -954,7 +964,7 @@
     <li class="component">
       <span class="title">Wiki Contribution</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../../../docs-wiki/3.4/wiki_contributor.html">3.4</a>
         </li>
       </ul>
@@ -962,7 +972,7 @@
     <li class="component">
       <span class="title">Wiki UI</span>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version">
           <a href="../../../../../../wiki-ui/index.html">master</a>
         </li>
       </ul>
@@ -1055,7 +1065,7 @@
 <p><input type="checkbox" data-item-complete="0"> You have your materials and textures done for your model. It isn&#8217;t required by Mixamo, just for loading your model into jme.</p>
 </li>
 <li>
-<p><input type="checkbox" data-item-complete="0"> You have <a href="blender_buffer_clearing.html" class="page">cleared your buffers</a>. It isn&#8217;t required by Mixamo, just makes your models cleaner for jme.</p>
+<p><input type="checkbox" data-item-complete="0"> You have <a href="blender_buffer_clearing.html" class="xref page">cleared your buffers</a>. It isn&#8217;t required by Mixamo, just makes your models cleaner for jme.</p>
 </li>
 <li>
 <p><input type="checkbox" data-item-complete="0"> You have applied the Location, Rotation, and Scale to your model.</p>
@@ -1076,7 +1086,7 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>See <a href="blender.html" class="page">Creating assets in Blender3D</a> for help on creating jME3 compatible models.</p>
+<p>See <a href="blender.html" class="xref page">Creating assets in Blender3D</a> for help on creating jME3 compatible models.</p>
 </div>
 </td>
 </tr>
@@ -1703,7 +1713,7 @@ If the action is not visible, navigate to the <code>Dope Sheet Editor</code> and
 <h2 id="export"><a class="anchor" href="#export"></a>Export</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Your rigged file is now ready to export. Export your model using one of the <a href="../../../../getting-started/features.html#supported-external-file-types" class="page">Supported External File Types</a> of your choice.</p>
+<p>Your rigged file is now ready to export. Export your model using one of the <a href="../../../../getting-started/features.html#supported-external-file-types" class="xref page">Supported External File Types</a> of your choice.</p>
 </div>
 </div>
 </div>
@@ -1711,7 +1721,7 @@ If the action is not visible, navigate to the <code>Dope Sheet Editor</code> and
 <h2 id="appending-blender-animations"><a class="anchor" href="#appending-blender-animations"></a>Appending Blender Animations</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Follow the directions for <a href="#mixamo-animations">custom Mixamo Animations</a>, <a href="#mixamo-download">Mixamo Download</a>, <a href="#creating-blender-animations">Creating Blender Animations</a>, <a href="blender.html#action-baking" class="page">Blender Action Baking</a> and <a href="blender_buffer_clearing.html#the-linked-action-buffer" class="page">Clearing The Linked Action Buffer</a> for all animations you wish to append to your <strong>rigged</strong> animation file.</p>
+<p>Follow the directions for <a href="#mixamo-animations">custom Mixamo Animations</a>, <a href="#mixamo-download">Mixamo Download</a>, <a href="#creating-blender-animations">Creating Blender Animations</a>, <a href="blender.html#action-baking" class="xref page">Blender Action Baking</a> and <a href="blender_buffer_clearing.html#the-linked-action-buffer" class="xref page">Clearing The Linked Action Buffer</a> for all animations you wish to append to your <strong>rigged</strong> animation file.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1831,7 +1841,7 @@ If the action is not visible, navigate to the <code>Dope Sheet Editor</code> and
 <p>An <code>Action</code> that has not been pushed down into the <code>NLA Stack</code> will block your <code>NLA Strip</code> from playing.</p>
 </div>
 <div class="paragraph">
-<p>Some export methods bake your actions automatically on export, others don&#8217;t. Test the animation in-game and if your animations are all messed up, try <a href="blender.html#action-baking" class="page">baking them</a> or use a different exporter.</p>
+<p>Some export methods bake your actions automatically on export, others don&#8217;t. Test the animation in-game and if your animations are all messed up, try <a href="blender.html#action-baking" class="xref page">baking them</a> or use a different exporter.</p>
 </div>
 </td>
 </tr>
@@ -1853,7 +1863,7 @@ If the action is not visible, navigate to the <code>Dope Sheet Editor</code> and
 <div class="ulist">
 <ul>
 <li>
-<p>See <a href="../../../beginner/hello_animation.html" class="page">Hello Animation</a> and <a href="../../../../core/animation/animation.html" class="page">Animation in JME3</a> to learn how to use your animated model.</p>
+<p>See <a href="../../../beginner/hello_animation.html" class="xref page">Hello Animation</a> and <a href="../../../../core/animation/animation.html" class="xref page">Animation in JME3</a> to learn how to use your animated model.</p>
 </li>
 </ul>
 </div>
@@ -1873,20 +1883,6 @@ If the action is not visible, navigate to the <code>Dope Sheet Editor</code> and
 <footer class="footer">
   <p>Copyright 2020 jMonkeyEngine Wiki Contributors. Licensed BSD-3.</p>
 </footer>
-<script src="../../../../../../_/js/vendor/docsearch.min.js"></script>
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<script>
-var search = docsearch({
-  apiKey: 'a736b6d93de805e26ec2f49b55013fbd',
-  indexName: 'jmonkeyengine',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: { hitsPerPage: 10 }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-function focusSearchInput () { document.querySelector('#search-input').focus() }
-if (document.querySelector('.home-link.is-current')) window.addEventListener('load', focusSearchInput)
-</script>
 <script src="../../../../../../_/js/site.js"></script>
 <script async src="../../../../../../_/js/vendor/highlight.js"></script>
   </body>
